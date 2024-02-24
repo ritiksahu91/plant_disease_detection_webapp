@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Welcome to SelfAgree</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+
+   
+
+    <style>
+       
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+
+    }
+
+    /* Transparent navigation bar */
+    header {
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); /* Green background color with some transparency */
+        position: fixed;
+        width: 100%;
+        z-index: 1; /* Ensure the navigation bar is above other content */
+        display: flex;
+        justify-content: space-between; /* To align logo and links */
+        align-items: center; /* Vertically center-align items */
+    }
+
+    /* Logo styles */
+   
+    nav {
+            background-color: rgba(0, 0, 0, 0.7); /* Background color with some transparency */
+            position: fixed;
+            width: 100%;
+            z-index: 2; /* Ensure the navigation bar is above other content */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 30px;
+            text-decoration: none;
+        }
+
+        /* Add a hover effect for the navigation links */
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Adjust the alpha for the hover effect */
+        }
+
+    /* Navigation links */
+    header nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    header nav ul li {
+        float: left;
+    }
+
+    header nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+    }
+
+    /* Add a hover effect for the navigation links */
+    header nav ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Adjust the alpha for the hover effect */
+    }
+
+    /* Feature styling (you can adjust this) */
+    .feature-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature {
+        flex: 1;
+        padding: 40px;
+        background-color: #8bd1da; /* Default background color */
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+        transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Add transition effects for hovering, color change, and shadow */
+        text-align: center; /* Center align text */
+        position: relative; /* To position the background image */
+    }
+
+    /* Background images for features */
+    .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+/* Additional styling for specific sections */
+#home {
+    background-image: url('background.jpg'); /* Add your agriculture-related image path here */
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #f7fbfa;
+    text-align: center;
+    padding: 10px 0;
+}
+   
+
+    /* Hover effect for features */
+    .feature:hover {
+        transform: scale(1.05); /* Enlarge the feature on hover */
+        background-color:rgb(202, 207, 214) ;/* Change background color on hover to a theme color */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    }
+
+    .feature h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+        transition: color 0.3s; /* Add transition effect for the h2 color */
+    }
+
+    
+
+    .feature-description {
+        font-size: 18px;
+        color: #555;
+    }
+
+    /* Feature-specific colors */
+    .feature:nth-child(odd) .feature-color {
+        font-size: 30px; /* Green color for odd-numbered features */
+        color:darkslategray ;
+    }
+
+    .feature:nth-child(even) .feature-color {
+        font-size: 30px;
+        color: darkslategrey; /* Orange color for even-numbered features */
+    }
+
+#features{
+    text-align: center;
+}
+
+       
+
+        /* Expert logo styles */
+        .expert-logo {
+            /* Add styles for your expert logo here */
+            max-width: 100px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="index2.html">experts</a></li>
+            <li><a href="index.html">user</a></li>
+            <!-- Added navigation link for 'Contact' -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+   
+
+    <section id="home" class="parallax">
+        <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 50px;  -webkit-text-fill-color: transparent; -webkit-background-clip: text; ">WELCOME TO AGRITECH  </h1>
+        
+    </section>
+
+    <section id="features">
+        <h2 style="font-size:45px; font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(219, 127, 255);">Key Features</h2>
+        <div class="feature-container">
+            <div class="feature">
+                <a href="#" ><img class="expert-logo" src="expert.jpg" alt="Expert Logo"></a>
+                <p class="feature-description">Talk to Expert</p>
+            </div>
+            <div class="feature">
+               
+                <a href="http://127.0.0.1:8080" ><img class="expert-logo" src="camera.png" alt="Expert Logo"></a>
+                <p class="feature-description">Upload image to know cure</p>
+            </div>
+            <div class="feature">
+                <a href="#" ><img class="expert-logo" src="comment.jpg" alt="Expert Logo"></a>
+                <p class="feature-description">comment in public</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrated Features -->
+    <section id="camera" class="feature">
+        <h2 class="feature-color">Plant Disease Detection with Camera Images</h2>
+        <p class="feature-description">Users can use their device's camera to take photos of plants and submit them for disease detection.</p>
+    </section>
+
+    <section id="disease-identification" class="feature">
+        <h2 class="feature-color">Automatic Disease Identification</h2>
+        <p class="feature-description">The app will analyze the submitted plant images and automatically identify any diseases or issues.</p>
+    </section>
+
+    <section id="expert-comments" class="feature">
+        <h2 class="feature-color">Expert Comment Section</h2>
+        <p class="feature-description">Users can view comments and suggestions from agricultural experts regarding their plant health concerns.</p>
+    </section>
+
+    <section id="user-profiles" class="feature">
+        <h2 class="feature-color">User Profiles</h2>
+        <p class="feature-description">Users can create profiles to track their plant health history, saved images, and expert interactions.</p>
+    </section>
+
+    <!-- Contact Section (you can add more details here) -->
+    <section id="contact" class="feature">
+        <h2 class="feature-color">Contact Us</h2>
+        <p class="feature-description">Have questions or feedback? Reach out to us.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 SelfAgree</p>
+        <a href="mailto:">email</a>
+    </footer>
+</body>
+</html>
